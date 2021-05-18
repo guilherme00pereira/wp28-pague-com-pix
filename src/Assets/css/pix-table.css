@@ -1,0 +1,121 @@
+#pix-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+.pix-instructions {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+.pix-card {
+    margin: 16px;
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    width: 300px;
+    box-shadow: 5px 5px 5px #CCCCCC;
+}
+
+.pix-card-title-key {
+    word-wrap: break-word;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.pix-card-title-type {
+    word-wrap: break-word;
+    font-size: 1.2em;
+    text-align: center;
+    color: #AAAAAA;
+}
+
+.pix-card-title h3 {
+    text-align: center;
+    font-size: 1.75em;
+    text-transform: uppercase;
+}
+
+.pix-card-actions {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.pix-channels {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 100%;
+}
+
+.channels-instructions {
+    display: flex;
+    font-size: 1.2em;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.pix-channels .wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+.pix-channels .channel {
+    text-align: center;
+    margin: 1.5em;
+}
+
+.pix-tooltip {
+    position: relative;
+}
+
+.pix-tooltip .pix-tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.pix-tooltip .pix-tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.pix-tooltip .pix-tooltiptextgreen::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #3cb371 transparent;
+}
+
+.pix-tooltip:hover .pix-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

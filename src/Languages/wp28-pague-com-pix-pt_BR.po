@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP28_Pix_BR\n"
+"POT-Creation-Date: 2021-05-12 11:30-0300\n"
+"PO-Revision-Date: 2021-05-12 11:31-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/Includes/Pix/PixDiscount.php:33
+#, php-format
+msgid "%s off"
+msgstr ""
+
+#: src/Includes/Pix/PixDiscountCoupon.php:40
+msgid "Get a discount paying with Pix"
+msgstr "Desconto para pagamento via Pix"
+
+#: src/Includes/Pix/PixGateway.php:39
+msgid "Pay with Pix"
+msgstr "Pagamento via Pix"
+
+#: src/Includes/Pix/PixGateway.php:40
+msgid "Allow your customers to pay with Pix using a QR Code."
+msgstr "Permita que seu clientes paguem com Pix usando QR Code"
+
+#: src/Includes/Pix/PixGateway.php:90
+msgid "Enable/Disable"
+msgstr "Habilitar/Desabilitar"
+
+#: src/Includes/Pix/PixGateway.php:90
+msgid "Enable Pix"
+msgstr "Habilitar Pix"
+
+#: src/Includes/Pix/PixGateway.php:91
+msgid "Title"
+msgstr "Título"
+
+#: src/Includes/Pix/PixGateway.php:92
+msgid "Represents the title visible to the customer"
+msgstr "Representa o título visível para o usuário comprador"
+
+#: src/Includes/Pix/PixGateway.php:94
+msgid "Description"
+msgstr "Descrição"
+
+#: src/Includes/Pix/PixGateway.php:95
+msgid ""
+"Text that will appear to your customer when choosing this payment method"
+msgstr ""
+"Texto que aparecerá para seu cliente ao escolher este método de pagamento"
+
+#: src/Includes/Pix/PixGateway.php:98
+msgid "Instructions"
+msgstr "Instruções"
+
+#: src/Includes/Pix/PixGateway.php:99
+msgid ""
+"Instructions that will display on the Thank You page, above the Pix keys"
+msgstr ""
+"Instruções apareceram na página de Obrigado pela Compra, acima das chaves "
+"Pix"
+
+#: src/Includes/Pix/PixGateway.php:101
+msgid "Discount"
+msgstr "Desconto"
+
+#: src/Includes/Pix/PixGateway.php:102
+msgid ""
+"Discount amount to be applied. Enter a fixed amount (e.g. 19.90) or "
+"percentage (e.g. 5%)"
+msgstr ""
+"Valor do desconto a ser aplicado. Digite um valor fixo (ex. 19,90) ou "
+"procentagem (ex. 5%)"
+
+#: src/Includes/Pix/PixGateway.php:159
+msgid "Awaiting offline payment"
+msgstr "Aguardando pagamento"
+
+#: src/Includes/templates/contact-channels-table.php:12
+msgid "Contact channels to share receipt payments:"
+msgstr "Canais de contato para envio do comprovante de pagamento"
+
+#: src/Includes/templates/contact-channels-table.php:19
+msgid "Channel (e.g.: E-mail, Whatsapp, etc...) "
+msgstr "Canais (ex: E-mail, Whatsapp, etc...)"
+
+#: src/Includes/templates/contact-channels-table.php:20
+msgid "Value"
+msgstr "Valor"
+
+#: src/Includes/templates/contact-channels-table.php:49
+msgid "+ Add Channel"
+msgstr "+ Adicionar Canal"
+
+#: src/Includes/templates/contact-channels-table.php:50
+msgid "Remove selected channel(s)"
+msgstr "Remover canal(is) selecionado(s)"
+
+#: src/Includes/templates/mail-order-received.php:21
+#: src/Includes/templates/pix-section.php:21
+msgid "Key: "
+msgstr "Chave:"
+
+#: src/Includes/templates/mail-order-received.php:32
+#: src/Includes/templates/pix-section.php:40
+msgid "Share the payment receipt through the channels indicated below:"
+msgstr ""
+"Compartilhe o comprovante de pagamento atracés dos canais indicados abaixo:"
+
+#: src/Includes/templates/notices/woocommerce-missing.php:21
+msgid "depends on the last version of WooCommerce to work!"
+msgstr "depende da última versão do WooCommerce para funcionar!"
+
+#: src/Includes/templates/notices/woocommerce-missing.php:27
+msgid "Activate WooCommerce"
+msgstr "Ativar WooCommerce"
+
+#: src/Includes/templates/notices/woocommerce-missing.php:37
+msgid "Install WooCommerce"
+msgstr "Instalar WooCommerce"
+
+#: src/Includes/templates/pix-accounts-table.php:12
+msgid "Register Pix Keys:"
+msgstr "Cadastrar Chaves Pix:"
+
+#: src/Includes/templates/pix-accounts-table.php:19
+msgid "Bank Name"
+msgstr "Banco"
+
+#: src/Includes/templates/pix-accounts-table.php:20
+msgid "Key Type"
+msgstr "Tipo de Chave"
+
+#: src/Includes/templates/pix-accounts-table.php:21
+msgid "Pix Key"
+msgstr "Chave Pix"
+
+#: src/Includes/templates/pix-accounts-table.php:22
+msgid "Holder Name"
+msgstr "Titular"
+
+#: src/Includes/templates/pix-accounts-table.php:23
+msgid "Holder City"
+msgstr "Cidade do Titular"
+
+#: src/Includes/templates/pix-accounts-table.php:55
+msgid "+ Add Key"
+msgstr "+ Adicionar Chave"
+
+#: src/Includes/templates/pix-accounts-table.php:56
+msgid "Remove selected key(s)"
+msgstr "Remover chave(s) selecionada(s)"
+
+#: src/Includes/templates/pix-section.php:30
+msgid "Copy Pix Key"
+msgstr "Copiar Chave Pix"
+
+#: src/Includes/templates/pix-section.php:31
+msgid "Copy link"
+msgstr "Copiar link"
