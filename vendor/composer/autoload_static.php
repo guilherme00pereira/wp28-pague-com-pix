@@ -16,11 +16,6 @@ class ComposerStaticInit9cdfea1a2c5d26e6916c9dd6e9465745
         array (
             'WP28\\PAGUECOMPIX\\' => 17,
         ),
-        'M' => 
-        array (
-            'MatthiasMullie\\PathConverter\\' => 29,
-            'MatthiasMullie\\Minify\\' => 22,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -35,14 +30,6 @@ class ComposerStaticInit9cdfea1a2c5d26e6916c9dd6e9465745
         'WP28\\PAGUECOMPIX\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-        ),
-        'MatthiasMullie\\PathConverter\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
-        ),
-        'MatthiasMullie\\Minify\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
         ),
     );
 

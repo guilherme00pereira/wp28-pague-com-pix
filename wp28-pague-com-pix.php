@@ -3,7 +3,7 @@
 Plugin Name: WP28 Pague com Pix
 Plugin URI: https://www.wp28.dev/pague-com-pix
 Description: Permite o pagamento dos pedidos com Pix
-Version: 1.0.0
+Version: 1.0.1
 Requires at least: 5.5
 Requires PHP: 7.3
 Author: WP28
@@ -21,6 +21,8 @@ require "vendor/autoload.php";
 
 function run_WP28_PAGUECOMPIX()
 {
+    register_activation_hook(__FILE__, array(\WP28\PAGUECOMPIX\Pix::class, 'activate'));
+
 	$plugin = new WP28\PAGUECOMPIX\Pix (
 		plugin_dir_path(__FILE__),
 		plugin_dir_url(__FILE__),

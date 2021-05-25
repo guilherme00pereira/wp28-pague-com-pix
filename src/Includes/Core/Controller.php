@@ -74,16 +74,16 @@ class Controller
     public function register_script_and_styles(): void
     {
         if (isset($_GET['page']) && 'wc-settings' === $_GET['page'] && isset($_GET['section']) && Config::getGatewayId() === $_GET['section']) {
-            wp_enqueue_script('wp28pix_settingspage_scripts', Config::getAssetsUrl() . 'js/settings-page.min.js', [], false, true);
-            wp_enqueue_script('wp28pix_maskedinput_scripts', Config::getAssetsUrl() . 'js/jquery.mask.min.js', [], false, true);
+            wp_enqueue_script('wp28pix_settingspage_scripts', Config::getAssetsUrl() . 'js/settings-page.js', [], false, true);
+            wp_enqueue_script('wp28pix_maskedinput_scripts', Config::getAssetsUrl() . 'js/jquery.mask.js', [], false, true);
         }
         //if (is_checkout()) {
-        wp_enqueue_script('wp28pix_checkout_scripts', Config::getAssetsUrl() . 'js/checkout-reload.min.js', [], false, true);
+        wp_enqueue_script('wp28pix_checkout_scripts', Config::getAssetsUrl() . 'js/checkout-reload.js', [], false, true);
         //}
 
         //if (is_wc_endpoint_url('order-received') || is_wc_endpoint_url( 'view-order' )) {
-        wp_enqueue_script('wp28pix_order_scripts', Config::getAssetsUrl() . 'js/pix-order-page.min.js', [], false, true);
-        wp_enqueue_style('wp28pix_thankyoupage_style', Config::getAssetsUrl() . 'css/pix-table.min.css');
+        wp_enqueue_script('wp28pix_order_scripts', Config::getAssetsUrl() . 'js/pix-order-page.js', [], false, true);
+        wp_enqueue_style('wp28pix_thankyoupage_style', Config::getAssetsUrl() . 'css/pix-table.css');
         //}
     }
 

@@ -22,6 +22,7 @@ class Pix
     public function __construct($dir, $url, $plugin_base)
     {
         Config::init($dir, $url, $plugin_base);
+        add_action('admin_init', array($this, 'redirect_after_activation'));
     }
 
 
@@ -54,11 +55,31 @@ class Pix
     /**
      * Echoes missing WooCommerce notice. Template displays options to activate or even install WooCommerce.
      */
-    public function woocommerce_missing_notice() : void
+    public function woocommerce_missing_notice(): void
     {
         ob_start();
         include Config::getTemplateDir() . '/notices/woocommerce-missing.php';
         $html = ob_get_clean();
         echo $html;
+    }
+
+    public static function activate()
+    {
+        if (
+            (isset($_REQUEST['action']) && 'activate-selected' === $_REQUEST['action']) &&
+            (isset($_POST['checked']) && count($_POST['checked']) > 1)) {
+            return;
+        }
+        add_option(Config::getName() . '-redirect-activation', wp_get_current_user()->ID);
+    }
+
+    public static function redirect_after_activation()
+    {
+        if (intval(get_option(Config::getName() . '-redirect-activation', false)) === wp_get_current_user()->ID) {
+            delete_option(Config::getName() . '-redirect-activation');
+            if (wp_safe_redirect(admin_url('/options-general.php?page=plugin-admin-page'))) {
+                exit;
+            }
+        }
     }
 }
